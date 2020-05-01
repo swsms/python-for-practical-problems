@@ -1,9 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
 
-# ​​​​Tutorial: Python Web Scraping Using BeautifulSoup
+# ​​​​Python Web Scraping Using BeautifulSoup
 # https://www.dataquest.io/blog/web-scraping-tutorial-python/
-
+# BS documentations
+# https://www.crummy.com/software/BeautifulSoup/bs4/doc/
 
 url = 'http://dataquestio.github.io/web-scraping-pages/simple.html'
 response = requests.get(url)
