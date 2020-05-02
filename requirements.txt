@@ -1,3 +1,7 @@
+# to keep the project clean
+flake8
+
+# libs used in the course
 beautifulsoup4
 html5lib
 requests
