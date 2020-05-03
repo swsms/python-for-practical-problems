@@ -4,6 +4,7 @@ flake8
 # libs used in the course
 beautifulsoup4
 xlrd
+xlwt
 html5lib
 requests
 xmltodict
