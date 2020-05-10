@@ -40,12 +40,14 @@ products_dict = load_products_dict(products_sheet)
 
 products_per_day_sheet = workbook.sheet_by_name(sheet_names[1])
 products_by_weight = load_products_by_weight_per_day(products_per_day_sheet)
-print(products_by_weight)
+# print(products_by_weight)
 
-indicators = [0, 0, 0, 0]
+aggregates = [0, 0, 0, 0]
 for product_name, weight in products_by_weight.items():
     coefficient = weight / 100
-    values = [value * coefficient for value in products_dict[product_name]]
-    indicators = [x + y for x, y in zip(values, indicators)]
+    values = [value * coefficient for value
+              in products_dict[product_name]]
+    aggregates = [value + aggregate for value, aggregate
+                  in zip(values, aggregates)]
 
-print(list(map(int, indicators)))
+print(list(map(int, aggregates)))  # [4963, 203, 307, 302]
