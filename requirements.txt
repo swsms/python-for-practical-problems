@@ -8,3 +8,4 @@ xlwt
 html5lib
 requests
 xmltodict
+matplotlib
